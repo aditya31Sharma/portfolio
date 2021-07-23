@@ -365,6 +365,74 @@ a.hero-content-cta:active::after{
 /* #endregion */
 
 
+/* #region About */
+
+section#about{
+    height:100vh;
+    background-color:#ccc;
+}
+#about-container{
+    max-width:75vw;
+    width: 70vw;
+    min-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+#introduction{
+    font-family: JosefinThin;
+    text-transform: uppercase;
+    letter-spacing:0.5rem;
+    font-size:calc(1.5rem + 1.5vw);
+    padding-top:10rem;
+}
+#about-container-1,#about-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10rem;
+}
+#img-side{
+    width:30%;
+}
+#img-side img{
+    width: calc(20rem + 15vh);
+    object-fit:cover;
+}
+#content-side{
+    width:70%;
+    margin-left: calc(2rem + 2vw);
+}
+#content-side p{
+    font-size:calc(1rem + 1.1vw);
+    line-height: 4rem;
+    text-align:justify;
+}
+#about-container-2{
+    margin-top:5rem;
+    justify-content:space-evenly;
+    width: 100%;
+}
+.container-card{
+    line-height:3rem;
+    padding: 3rem;
+    text-align: left;
+}
+.container-card-title{
+    font-family: JosefinExtraLight;
+    text-transform: uppercase;
+    letter-spacing:0.5rem;
+    font-size:calc(1rem + 0.5vw);
+}
+.container-info{
+    font-size:calc(1rem + 0.75vw);
+    letter-spacing:0.2rem;
+}
+/* #endregion */
+
+
 /* #region Work section */
 
 section#work{
@@ -375,7 +443,7 @@ section#work{
 }
 #work-title{
     font-family: 'JosefinExtraLight';
-    color:#fff;
+    color:var(--lightgreen);
     text-transform: uppercase;
     letter-spacing:2rem;
     font-weight: 100;
@@ -548,6 +616,32 @@ section#work{
 
 
 /* #region MEDIA QUERIES */
+@media only screen and (max-width:1540px){
+    #content-side{
+        margin-left: calc(2rem + 5vw);
+    }  
+}
+@media only screen and (max-width:1300px){
+    #content-side{
+        margin-left: calc(2rem + 10vw);
+    }  
+}
+@media only screen and (max-width:1100px){
+    #content-side{
+        margin-left: calc(2rem + 15vw);
+    }  
+}
+@media screen and (max-width:950px){
+    #content-side {
+        margin-left: calc(2rem + 20vw);
+    }
+    #content-side p{
+        font-size:calc(1rem + 0.75vw);
+        line-height: 2.5rem;
+    }
+}
+
+
 @media only screen and (max-width:990px){
     .work-container-card-heading a{
         font-size: calc(0.75rem + 1vw);
@@ -602,6 +696,57 @@ section#work{
     .work-container-card-img img{
         width:60%;
     }
+    section#about{
+        height:130vh;
+        background-color:#ccc;
+    }
+    #about-container{
+        max-width:100vw;
+        width: 80vw;
+    }
+    #about-container-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    #img-side {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #img-side img{
+        width: calc(20rem + 5vh);
+        object-fit:cover;
+    }
+    #content-side {
+        margin: 0 auto;
+        margin-top: calc(2rem + 1vw);
+        width: 100%;
+    }
+    #about-container-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:flex-start;
+        margin-top: 2rem;
+    }
+    .container-card {
+        line-height: 3rem;
+        padding: 1rem 0rem;
+        padding-left: 0rem;
+        text-align: left;
+        width: 100%;
+    }
+    .container-card-title{
+        font-size:calc(1rem + 0.5vw);
+    }
+    .container-info{
+        font-size:calc(1rem + 1vw);
+        letter-spacing:0.2rem;
+    }
+
 }
 @media screen and (max-width:600px){
     .hero-content{
@@ -618,6 +763,12 @@ section#work{
     }
     .work-container-card-img img{
         width:75%;
+    }
+
+    #introduction{
+        letter-spacing:0.3rem;
+        font-size:calc(1.5rem + 1vw);
+        padding-top:10rem;
     }
 }
 @media screen and (max-width:480px){
@@ -704,6 +855,21 @@ section#work{
         text-align: center;
     }
 
+
+    #about-container{
+        max-width:100vw;
+        width: 70vw;
+    }
+    #introduction{
+        font-size:calc(1.5rem + 0.5vw);
+        padding-top:5rem;
+    }
+    .container-card {
+        line-height: 2rem;
+    }
+    .container-info{
+        font-size: calc(1rem + 1.25vw);
+    }
 }
 @media screen and (max-width:450px){
     p.hero-content-para{
@@ -736,6 +902,24 @@ section#work{
     .work-container-card-heading a{
         
         font-size: calc(1rem + 1vw);
+    }
+    #introduction{
+        letter-spacing:0.3rem;
+        font-size:calc(1.5rem + 1.5vw);
+        line-height:2.5rem;
+        text-align: center;
+        padding-top:5rem;
+    }
+    #about-container-1 {
+        margin-top: 2.5rem;
+    }
+    #img-side img {
+        width: calc(20rem);
+        object-fit: cover;
+    }
+    #content-side p {
+        font-size: calc(1.5rem);
+        line-height: 2.5rem;
     }
 }
 @media screen and (max-width:430px){
