@@ -108,8 +108,8 @@ html::-webkit-scrollbar
 :root{
     font-size:62.5%;
     
-    --darkest-gray: #18191a;
-    --dark-gray: #242526;
+    --darkest-gray: #050505;
+    --dark-gray: #0f0f0f;
     --lightgreen: #35e200;
     --lightgreen-hover:#35e20077;
     --grad:49deg, #00ffea, #5fbfff, #6e71ff,#db28ff;
@@ -480,7 +480,9 @@ a.hero-content-cta:active::after{
         padding-bottom: calc(10rem + 2vw);
     }
     section#hero{
-        background-position: 75%;
+        background-image: url(../img/portfolio-hero-mobile.png);
+        background-size:cover;
+        height:90vh;
     }
     h1.hero-content-title{
         font-size:calc(2rem + 3vw);
@@ -507,8 +509,18 @@ a.hero-content-cta:active::after{
         font-size:calc(1.25rem + 1vw);
     }
 }
+@media screen and (max-width:430px){
+    section#hero{
+        background-position: 0%;
+    }
+}
 @media screen and (max-width:390px){
     p.hero-content-para{
         font-size:calc(1rem + 1vw);
+    }
+}
+@media screen and (max-width:360px){
+    section#hero{
+        background-position: 40%;
     }
 }
