@@ -453,7 +453,7 @@ a.hero-content-cta:active::after{
         position: sticky;
         top: 0;
         left: 0;
-        height:93vh;
+        height:93.5vh;
         z-index: 10;
     }
 
@@ -490,7 +490,7 @@ a.hero-content-cta:active::after{
     section#hero{
         background-image: url(../img/portfolio-hero-mobile.png);
         background-size:cover;
-        height:93vh;
+        height:93.5vh;
     }
     h1.hero-content-title{
         font-size:calc(2rem + 3vw);
