@@ -449,6 +449,14 @@ a.hero-content-cta:active::after{
 }
 @media screen and (max-width:480px){
 
+    aside#side-nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+        height:93vh;
+        z-index: 10;
+    }
+
     ul.side-nav-content-social a i {
         font-size: calc(1.5rem + 0.6667vw);
         padding-bottom: calc(3rem + 0.6667vw);
@@ -482,7 +490,7 @@ a.hero-content-cta:active::after{
     section#hero{
         background-image: url(../img/portfolio-hero-mobile.png);
         background-size:cover;
-        height:90vh;
+        height:93vh;
     }
     h1.hero-content-title{
         font-size:calc(2rem + 3vw);
