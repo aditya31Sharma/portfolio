@@ -97,64 +97,112 @@
     0%{
         width:0%;
     }
+    70%{
+        width:90%;
+    }
     100%{
         width:90%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+        box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-2{
     0%{
         width:0%;
     }
+    70%{
+        width:75%;
+    }
     100%{
         width:75%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-3{
     0%{
         width:0%;
     }
+    70%{
+        width:50%;
+    }
     100%{
         width:50%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-4{
     0%{
         width:0%;
     }
+    70%{
+        width:60%;
+    }
     100%{
         width:60%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-5{
     0%{
         width:0%;
     }
+    70%{
+        width:95%;
+    }
     100%{
         width:95%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-6{
     0%{
         width:0%;
     }
+    70%{
+        width:90%;
+    }
     100%{
         width:90%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-7{
     0%{
         width:0%;
     }
+    70%{
+        width:75%;
+    }
     100%{
         width:75%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 @keyframes skill-8{
     0%{
         width:0%;
     }
+    70%{
+        width:80%;
+    }
     100%{
         width:80%;
+        background: linear-gradient(145deg, #3af700, #31d000);
+    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
+             -5px -5px 7px rgba(255, 255, 255, 0.25);
     }
 }
 /* #endregion */
@@ -576,45 +624,47 @@ h3.skills-title{
     width:100%;
     position: relative;
     display:block;
-    /* padding:0.5rem; */
     border-radius: 50px;
-    background-color:var(--lightgreen);
+    box-shadow: 
+        inset 4px 4px 12px rgb(170, 170, 170,0.75),
+        inset -4px -4px 12px rgba(255, 255, 255, 0.25);
 }
 .skill-progress{
     display:inline-block;
     position: relative;
     vertical-align: middle;
     border-radius: 50px;
-    border: 2px solid #bbb;
     width:99%;
     height:3rem;
-    background-color:#ccc;
+    background: linear-gradient(145deg, #dadada, #c7c7c7);
+    box-shadow:  5px 5px 15px rgb(170, 170, 170,0.75),
+             -5px -5px 15px rgba(255, 255, 255, 0.25);
 }
 
 /* #region skill bars */
 #skill-1{
-    animation: skill-1 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-1 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-2{
-    animation: skill-2 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-2 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-3{
-    animation: skill-3 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-3 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-4{
-    animation: skill-4 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-4 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-5{
-    animation: skill-5 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-5 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-6{
-    animation: skill-6 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-6 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-7{
-    animation: skill-7 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-7 9s infinite cubic-bezier(1,0,0,1);
 }
 #skill-8{
-    animation: skill-8 4s infinite cubic-bezier(1,0,0,1);
+    animation: skill-8 9s infinite cubic-bezier(1,0,0,1);
 }
 /* #endregion */
 
