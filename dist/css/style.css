@@ -1000,17 +1000,17 @@ h3.skills-title{
     }
     .skills-design{
         margin-top:-2rem;
-        padding-bottom: 50rem;
     }
     .skills-title{
-        /* padding-bottom: 2rem; */
         padding-bottom: 0rem;
+        line-height: 2rem;
     }
     .a-skill{
         margin:2.5rem 0rem;
     }
     .a-skill h4{
         font-size: 1.5rem;
+        
     }
     .skill-progress{
         height:2rem;
@@ -1104,6 +1104,9 @@ h3.skills-title{
         width: 90%;
         line-height:3rem;
         text-align: center;
+    }
+    h3.skills-title {
+        font-size: calc(1.1rem);
     }
 }
 
