@@ -240,7 +240,7 @@
 @keyframes holder-clicked{
     0%{
         background: linear-gradient(145deg, #252525, #111);
-        box-shadow:  0px 0px 50px #208a0081;
+        box-shadow:  0px 0px 50px #3BFEB830;
     }
     100%{
         background: transparent;
@@ -292,7 +292,7 @@ html::-webkit-scrollbar
     
     --darkest-gray: #050505;
     --dark-gray: #0f0f0f;
-    --lightgreen: #35e200;
+    --lightgreen:#3BFEB8;
     --lightgreen-hover:#35e20055;
     --grad:49deg, #00ffea, #5fbfff, #6e71ff,#db28ff;
 }
@@ -352,10 +352,10 @@ ul.side-nav-content-social a i{
 ul.side-nav-content-social a i:hover,
 ul.side-nav-content-social a i:active{
     color:#000;
-    text-shadow: 0 0 10px #3cff00, 0 0 20px #3cff00, 
-      0 0 30px #3cff00, 0 0 40px #3cff00, 
-      0 0 50px #3cff00, 0 0 60px #3cff00, 
-      0 0 70px #3cff00;
+    text-shadow: 0 0 10px var(--lightgreen), 0 0 20px var(--lightgreen), 
+      0 0 30px var(--lightgreen), 0 0 40px var(--lightgreen), 
+      0 0 50px var(--lightgreen), 0 0 60px var(--lightgreen), 
+      0 0 70px var(--lightgreen);
 }
 
 /* #endregion */
@@ -635,9 +635,9 @@ section#work{
 .work-container-card:active{
 
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 
-      0 0 30px #3cff00, 0 0 40px #3cff00, 
-      0 0 50px #3cff00, 0 0 60px #3cff00, 
-      0 0 70px #3cff00;
+      0 0 30px var(--lightgreen), 0 0 40px var(--lightgreen), 
+      0 0 50px var(--lightgreen), 0 0 60px var(--lightgreen), 
+      0 0 70px var(--lightgreen);
 }
 .work-container-card-heading a{
     
@@ -733,6 +733,7 @@ h3.skills-title{
 /* #endregion */
 
 /* #endregion */
+
 
 /* #region Resume */
 
@@ -837,7 +838,7 @@ section#resume{
     margin: 0 5rem;
     transition: all 0.5s ease-in-out;
     background: linear-gradient(145deg, #252525, #111);
-    box-shadow:  0px 0px 50px #208a0081;
+    box-shadow:  0px 0px 50px #3BFEB830;
 }
 
 /* #region on-click classes */
@@ -916,14 +917,14 @@ section#resume{
 .a-field-content-info h4 a{
     font-family: JosefinMedium,sans-serif;
     text-transform: uppercase;
-    color: #35e200;
+    color: var(--lightgreen);
     font-size: calc(1rem + 0.75vh);
 }
 .a-field-content-info p span,
 .a-field-content-info p span a,
 .a-field-content-heading p
 {
-    color: #35e200;
+    color: var(--lightgreen);
 }
 h4.project-info{
     font-family: ProductSansLight,sans-serif;
