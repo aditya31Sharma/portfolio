@@ -1,20 +1,31 @@
 /* #region Fonts */
 
-/* #region others */
+/* #region Axilia and Josefin Sans */
 @font-face {
     font-family: 'Axilia';
     src: local('Axilia'),
          url('../fonts/Axilia.otf') format('opentype')
 }
+
 @font-face {
     font-family: 'JosefinThin';
     src: local('JosefinThin'),
-         url('../fonts/JosefinSans-Thin.ttf') format('truetype')
+         url('../fonts/JosefinSans/JosefinSans-Thin.ttf') format('truetype')
 }
 @font-face {
     font-family: 'JosefinExtraLight';
     src: local('JosefinExtraLight'),
-         url('../fonts/JosefinSans-ExtraLight.ttf') format('truetype')
+         url('../fonts/JosefinSans/JosefinSans-ExtraLight.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'JosefinLight';
+    src: local('JosefinLight'),
+         url('../fonts/JosefinSans/JosefinSans-Light.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'JosefinMedium';
+    src: local('JosefinMedium'),
+         url('../fonts/JosefinSans/JosefinSans-Medium.ttf') format('truetype')
 }
 
 /* #endregion */
@@ -205,6 +216,58 @@
              -5px -5px 7px rgba(255, 255, 255, 0.25);
     } */
 }
+/* #endregion */
+
+/* #region resume animations */
+
+@keyframes leaf-1-clicked{
+    0%{
+        transform:rotateZ(42.5deg) translate(45%,-35%) 
+    scale(1.25);
+    }
+    100%{
+        transform:rotateZ(0deg) translate(0%,0%) scale(1);
+    }
+}
+@keyframes leaf-2-clicked{
+    0%{
+        transform:scaleX(0);
+    }
+    100%{
+        transform:scaleX(1);
+    }
+}
+@keyframes holder-clicked{
+    0%{
+        background: linear-gradient(145deg, #252525, #111);
+        box-shadow:  0px 0px 50px #208a0081;
+    }
+    100%{
+        background: transparent;
+        box-shadow: none;
+    }
+}
+@keyframes heading-clicked{
+    0%{
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes content-clicked{
+    0%{
+        opacity: 0;
+        transform: translateX(-40%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 /* #endregion */
 
 /* #endregion */
@@ -671,6 +734,230 @@ h3.skills-title{
 
 /* #endregion */
 
+/* #region Resume */
+
+section#resume{
+    height:300vh;
+    background-color: var(--dark-gray);
+    color: #fff;
+    font-size: 2rem;
+    line-height:3rem;
+    width:100%;
+}
+#resume-heading{
+    font-family: Axilia,sans-serif;
+    text-transform: lowercase;
+    letter-spacing:2rem;
+    font-size: calc(2rem + 1vw);
+    text-align: center;
+    padding-top:calc(3rem + 5vw);
+}
+#resume-subheading{
+    font-family: JosefinExtraLight,sans-serif;
+    text-transform: uppercase;
+    letter-spacing:1rem;
+    font-size: calc(0.5rem + 0.75vw);
+    text-align: center;
+    margin-top:calc(2rem + 1vw);
+}
+.a-field {
+    position: relative;
+    margin: 5rem auto;
+    margin-bottom: 20rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hobbies{
+    margin-bottom: 10rem;
+}
+.a-field-content-container::before {
+    content: "";
+    display: block;
+    width: 3px;
+    border-radius:50px;
+    height: 125%;
+    background: #494949;
+    position: absolute;
+    left: calc(50% - 2px);
+    top: 0%;
+}
+#education-heading,
+#projects-heading,
+#hobbies-heading{
+    font-family: ProductSansThin;
+    font-size: calc(1rem + 2vh);
+    color: var(--lightgreen);
+    letter-spacing: 0.25rem;
+}
+.a-field-content-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:3rem;
+    width: 60%;
+    height:150px;
+}
+.a-field-content-heading,
+.a-field-content-info{
+    width:40%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.a-field-content-heading{
+    text-align: right;
+    font-family: GoogleSansRegular,sans-serif;
+    text-transform: uppercase;
+    font-size: calc(1rem + 0.75vh);
+    transform: translateX(40%);
+}
+.a-field-content-info{
+    transform: translateX(-40%);
+}
+.a-field-content-heading h4{
+    font-family: JosefinMedium,sans-serif;
+    font-size: calc(1rem + 0.75vh);
+}
+.a-field-content-icon-holder{
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100px;
+    height:100px;
+    text-align: center;
+    background-color: var(--dark-gray);
+    border-radius: 50%;
+    z-index: 1;
+    padding:2rem;
+    margin: 0 5rem;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(145deg, #252525, #111);
+    box-shadow:  0px 0px 50px #208a0081;
+}
+
+/* #region on-click classes */
+.leaf-1-clicked{
+    transition: all 0.5s ease-in-out;
+    animation: leaf-1-clicked 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.leaf-2-clicked{
+    transition: all 0.5s ease-in-out;
+    animation: leaf-2-clicked 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.holder-clicked{
+    transition: all 0.5s ease-in-out;
+    animation: holder-clicked 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.heading-clicked{
+    transition: all 0.5s ease-in-out;
+    transform-origin: right;
+    animation: heading-clicked 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content-clicked{
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+    animation: content-clicked 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+/* #endregion */
+
+
+.leaf-1{
+    height:3rem;
+    width:3rem;
+    text-align:center;
+    background-color: var(--lightgreen);
+    border-radius:0px 20px 0px 20px;
+    margin-right: 0.5rem;
+    transform:rotateZ(42.5deg) translate(45%,-35%) 
+    scale(1.25);
+}
+.leaf-2{
+    height:3rem;
+    width:3rem;
+    text-align:center;
+    background-color: var(--lightgreen);
+    border-radius:20px 0px 20px 0px;
+    margin-top: -3rem;
+    transform:scaleX(0);
+}
+.a-field-content-info{
+    font-family: GoogleSansRegular,sans-serif;
+}
+.a-field-content-info h4 a{
+    font-family: JosefinMedium,sans-serif;
+    text-transform: uppercase;
+    color: #35e200;
+    font-size: calc(1rem + 0.75vh);
+}
+.a-field-content-info p span,
+.a-field-content-info p span a,
+.a-field-content-heading p
+{
+    color: #35e200;
+}
+h4.project-info{
+    font-family: ProductSansLight,sans-serif;
+    font-size: calc(1rem + 0.75vh);
+    text-transform: none;
+}
+.project-content{
+    font-size: calc(1rem + 0.5vh);
+    line-height:2.5rem;
+    text-align: justify;
+}
+
+.download-resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-resume a{
+    font-family: JosefinMedium,sans-serif;
+    text-transform: uppercase;
+    letter-spacing:0.5rem;
+    background: transparent;
+    border: 2px solid var(--lightgreen);
+    padding: 2rem 4rem;
+    font-size:2rem;
+    color: var(--lightgreen);
+    transition: all 0.3s ease-in-out;
+}
+.download-resume a:hover,
+.download-resume a:active{
+    border-color: #fff;
+    color: #fff;
+}
+/* #endregion */
 
 
 
@@ -809,8 +1096,6 @@ h3.skills-title{
         line-height: 2.5rem;
     }
 }
-
-
 @media only screen and (max-width:990px){
     .work-container-card-heading a{
         font-size: calc(0.75rem + 1vw);
