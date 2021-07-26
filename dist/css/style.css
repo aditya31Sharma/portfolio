@@ -793,6 +793,9 @@ section#resume{
     color: var(--lightgreen);
     letter-spacing: 0.25rem;
 }
+.hobbies-content{
+    text-align: justify; 
+}
 .a-field-content-container{
     position: relative;
     display: flex;
@@ -809,6 +812,7 @@ section#resume{
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+
 .a-field-content-heading{
     text-align: right;
     font-family: GoogleSansRegular,sans-serif;
@@ -818,6 +822,7 @@ section#resume{
 }
 .a-field-content-info{
     transform: translateX(-40%);
+    text-align:left;
 }
 .a-field-content-heading h4{
     font-family: JosefinMedium,sans-serif;
@@ -934,7 +939,7 @@ h4.project-info{
 .project-content{
     font-size: calc(1rem + 0.5vh);
     line-height:2.5rem;
-    text-align: justify;
+    text-align:left;
 }
 
 .download-resume{
@@ -1078,6 +1083,22 @@ h4.project-info{
         margin-left: calc(2rem + 5vw);
     }  
 }
+@media only screen and (max-width:1400px){
+
+    section#resume{
+        height:325vh;
+    }
+    .a-field-content-container{
+        margin-bottom:4rem;
+        width:80%;
+    }
+
+    .a-field-content-container::before {
+        height: 150%;
+        left: calc(50% - 2px);
+        top: 0%;
+    }
+}
 @media only screen and (max-width:1300px){
     #content-side{
         margin-left: calc(2rem + 10vw);
@@ -1088,6 +1109,11 @@ h4.project-info{
         margin-left: calc(2rem + 15vw);
     }  
 }
+@media only screen and (max-width:990px){
+    .work-container-card-heading a{
+        font-size: calc(0.75rem + 1vw);
+    }
+}
 @media screen and (max-width:950px){
     #content-side {
         margin-left: calc(2rem + 20vw);
@@ -1096,10 +1122,27 @@ h4.project-info{
         font-size:calc(1rem + 0.75vw);
         line-height: 2.5rem;
     }
-}
-@media only screen and (max-width:990px){
-    .work-container-card-heading a{
-        font-size: calc(0.75rem + 1vw);
+
+    .project-content {
+        font-size: calc(1rem + 0.25vh);
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .a-field {
+        position: relative;
+        margin: 5rem auto;
+        margin-bottom: 10rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .a-field-content-icon-holder {
+        width: 100px;
+        height: 100px;
+        padding: 2rem;
+        margin: 0 2rem;
     }
 }
 @media screen and (max-width:930px){
@@ -1205,6 +1248,60 @@ h4.project-info{
         letter-spacing:0.2rem;
     }
 
+    section#resume{
+        height:300vh;
+    }
+    #resume-subheading {
+        letter-spacing: 1rem;
+        font-size: calc(0.5rem + 1.5vw);
+        text-align: center;
+        margin-top: calc(2rem + 1vw);
+    }
+    
+    #education-heading, #projects-heading, #hobbies-heading {
+        font-size: calc(1rem + 2vh);
+        margin-bottom: 2rem;
+    }
+    .hobbies-content{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .a-field-content-container {
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    .a-field-content-heading h4 {
+        font-size: calc(1rem + 0.5vh);
+    }
+    .a-field-content-heading {
+        font-size: calc(1rem + 0.5vh);
+    }
+    .a-field-content-info h4 a {
+        font-size: calc(1rem + 0.5vh);
+    }
+    .a-field-content-info p{
+        font-size:1.5rem;
+    }
+    .a-field-content-info p.project-content {
+        font-size: 1.5rem;
+    }
+
+}
+@media screen and (max-width:704px){
+    /* .a-field-content-info p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    } */
+
+    .a-field-content-info p.project-content{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-align: justify;
+    }
+    .a-field-content-info h4 {
+        /* font-size: calc(1rem + 0.5vh); */
+        line-height:1.5rem;
+    }
 }
 @media screen and (max-width:600px){
     .hero-content{
@@ -1227,6 +1324,75 @@ h4.project-info{
         letter-spacing:0.3rem;
         font-size:calc(1.5rem + 1vw);
         padding-top:10rem;
+    }
+
+
+    section#resume{
+        height:275vh;
+    }
+    #resume-heading {
+        font-family: Axilia,sans-serif;
+        text-transform: lowercase;
+        letter-spacing: 2rem;
+        font-size: calc(2rem + 1vw);
+        text-align: center;
+        padding-top: calc(3rem + 5vw);
+        margin: 0 auto;
+    }
+    #resume-subheading {
+        letter-spacing: 0.5rem;
+        font-size: calc(1rem + 1.5vw);
+        text-align: center;
+        margin: 0 auto;
+        margin-top: calc(2rem + 1vw);
+        width:80%;
+    }
+    .a-field-content-container{
+        width:85%;
+    }
+    .a-field-content-heading {
+        font-size: calc(1rem + 0.5vh);
+        line-height:2rem;
+    }
+    .a-field-content-info p {
+        font-size: 1.5rem;
+        line-height:2.5rem;
+    }
+    .a-field-content-info p.hobbies-content {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .a-field-content-info p.project-content {
+        font-size: 1.1rem;
+    }
+    .a-field-content-heading h4 {
+        font-size: 1.25rem;
+    }
+    .a-field-content-info h4 a {
+        font-size: 1.25rem;
+    }
+    .download-resume a {
+        font-family: JosefinMedium,sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        background: transparent;
+        border: 2px solid var(--lightgreen);
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        color: var(--lightgreen);
+        transition: all 0.3s ease-in-out;
+    }
+}
+@media screen and (max-width:550px){
+    .a-field-content-icon-holder {
+        width: 100px;
+        height: 100px;
+        padding: 0rem;
+        margin: 0 1rem;
+    }
+    .a-field-content-info p.project-content {
+        font-size: 1rem;
+        line-height:1.5rem;
     }
 }
 @media screen and (max-width:480px){
@@ -1300,7 +1466,6 @@ h4.project-info{
     #work-title{
         padding-top:10rem;
         margin-bottom:calc(5rem + 5vw);
-        /* font-size: calc(2rem + 1.75vw); */
     }
     .work-container-card{
         margin-bottom: 2rem;
@@ -1356,6 +1521,66 @@ h4.project-info{
         text-align: center;
         font-size:calc(1.5rem + 1vw);
         margin-bottom: 5rem;
+    }
+
+
+    #resume-heading{
+        margin-left: 2rem;
+    }
+    #resume-subheading {
+        letter-spacing: 0.1rem;
+        line-height:2rem;
+        font-size: calc(1rem + 1vw);
+    }
+    #education-heading, #projects-heading, #hobbies-heading {
+        font-size: calc(1rem + 1vh);
+    }
+    .a-field-content-heading h4 ,.a-field-content-info h4 a{
+        font-size: 1rem;
+    }
+    
+    section#resume{
+        height:290vh;
+    }
+    .a-field-content-heading {
+        font-size: calc(1rem);
+        line-height: 2rem;
+    }
+    .a-field-content-info p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .a-field-content-info p.project-content {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align:left;
+    }
+    .a-field-content-info p.hobbies-content {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .a-field-content-container{
+        margin: 1rem;
+        height: 100px;
+    }
+    #projects-1,#projects-2,#projects-3{
+        height: 175px;
+    }
+    .a-field-content-container::before {
+        height: 125%;
+        left: calc(50% - 2px);
+        top: 0%;
+    }
+    .a-field-content-icon-holder {
+        width: 100px;
+        height: 100px;
+        padding: 0rem;
+        margin: 0 1rem;
+        transform: scale(0.75);
+    }
+    .download-resume a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
     }
 }
 @media screen and (max-width:450px){
@@ -1413,6 +1638,19 @@ h4.project-info{
     section#hero{
         background-position: 0%;
     }
+    .a-field-content-icon-holder {
+        width: 85px;
+        height: 75px;
+        margin: 0;
+        transform: scale(0.5);
+    }
+    .a-field-content-heading, .a-field-content-info {
+        width: 60%;
+    }
+    .leaf-2{
+        margin-left: 0.1rem;
+        margin-right:0.1rem;
+    }
 }
 @media screen and (max-width:410px){
     h3.skills-title {
@@ -1422,6 +1660,14 @@ h4.project-info{
 @media screen and (max-width:390px){
     p.hero-content-para{
         font-size:calc(1rem + 1vw);
+    }
+    .a-field-content-heading h4, .a-field-content-info h4 a {
+        font-size: 1rem;
+        line-height:1.25rem;
+    }
+    .a-field-content-info h4 {
+        font-size: 1rem;
+        line-height: 1.25rem;
     }
 }
 @media screen and (max-width:375px){
@@ -1444,6 +1690,9 @@ h4.project-info{
     }
     h3.skills-title {
         font-size: calc(1.1rem);
+    }
+    #projects-1, #projects-2, #projects-3 {
+        height: 200px;
     }
 }
 
