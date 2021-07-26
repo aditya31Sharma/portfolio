@@ -429,7 +429,7 @@ ul.header-main-nav-links li a:active::after{
 
 section#hero{
     height:100vh;
-    background-image: url(../img/portfolio-hero-main.png);
+    background-image: url(../img/portfolio-hero-main-mint.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1270,7 +1270,7 @@ h4.project-info{
         padding-bottom: calc(10rem + 2vw);
     }
     section#hero{
-        background-image: url(../img/portfolio-hero-mobile.png);
+        background-image: url(../img/portfolio-hero-mobile-mint.png);
         background-size:cover;
         height:93.5vh;
     }
