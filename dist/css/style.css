@@ -1595,7 +1595,7 @@ section#hire-me{
     section#hero{
         background-image: url(../img/portfolio-hero-mobile-mint.png);
         background-size:cover;
-        height:93.5vh;
+        height:100vh;
     }
     h1.hero-content-title{
         font-size:calc(2rem + 3vw);
@@ -1618,7 +1618,7 @@ section#hire-me{
     }
 
     section#work{
-        height:93.5vh;
+        height:100vh;
     }
     #work-title{
         padding-top:10rem;
@@ -1697,7 +1697,7 @@ section#hire-me{
     }
     
     section#resume{
-        height:290vh;
+        height:300vh;
     }
     .a-field-content-heading {
         font-size: calc(1rem);
