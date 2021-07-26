@@ -184,12 +184,6 @@
     100%{
         width:90%;
     }
-    /* 100%{
-        width:90%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-        box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-2{
     0%{
@@ -198,12 +192,6 @@
     100%{
         width:75%;
     }
-    /* 100%{
-        width:75%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-3{
     0%{
@@ -212,12 +200,6 @@
     100%{
         width:50%;
     }
-    /* 100%{
-        width:50%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-4{
     0%{
@@ -226,12 +208,6 @@
     100%{
         width:60%;
     }
-    /* 100%{
-        width:60%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-5{
     0%{
@@ -240,12 +216,6 @@
     100%{
         width:95%;
     }
-    /* 100%{
-        width:95%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-6{
     0%{
@@ -254,12 +224,6 @@
     100%{
         width:90%;
     }
-    /* 100%{
-        width:90%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-7{
     0%{
@@ -268,26 +232,14 @@
     100%{
         width:75%;
     }
-    /* 100%{
-        width:75%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 @keyframes skill-8{
-    0%{
+    from{
         width:0%;
     }
-    100%{
+    to{
         width:80%;
     }
-    /* 100%{
-        width:80%;
-        background: linear-gradient(145deg, #3af700, #31d000);
-    box-shadow:  5px 5px 7px rgb(170, 170, 170,0.75),
-             -5px -5px 7px rgba(255, 255, 255, 0.25);
-    } */
 }
 /* #endregion */
 
@@ -783,29 +735,42 @@ h3.skills-title{
 }
 
 /* #region skill bars */
-#skill-1{
-    animation: skill-1 4s infinite cubic-bezier(1,0,0,1);
-}
-#skill-2{
-    animation: skill-2 4s infinite cubic-bezier(1,0,0,1);
-}
-#skill-3{
-    animation: skill-3 4s infinite cubic-bezier(1,0,0,1);
-}
-#skill-4{
-    animation: skill-4 4s infinite cubic-bezier(1,0,0,1);
-}
-#skill-5{
-    animation: skill-5 4s infinite cubic-bezier(1,0,0,1);
-}
-#skill-6{
-    animation: skill-6 4s infinite cubic-bezier(1,0,0,1);
-}
-#skill-7{
-    animation: skill-7 4s infinite cubic-bezier(1,0,0,1);
-}
+/* #skill-1,
+#skill-2,
+#skill-3,
+#skill-4,
+#skill-5,
+#skill-6,
+#skill-7,
 #skill-8{
-    animation: skill-8 4s infinite cubic-bezier(1,0,0,1);
+
+} */
+
+#skills[data-scroll="in"] #skill-1{
+    
+    animation: skill-1 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-2{
+    
+    animation: skill-2 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-3{
+    animation: skill-3 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-4{
+    animation: skill-4 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-5{
+    animation: skill-5 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-6{
+    animation: skill-6 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-7{
+    animation: skill-7 4s forwards cubic-bezier(1,0,0,1);
+}
+#skills[data-scroll="in"] #skill-8{
+    animation: skill-8 4s forwards cubic-bezier(1,0,0,1);
 }
 /* #endregion */
 
