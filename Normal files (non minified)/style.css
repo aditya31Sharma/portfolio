@@ -7,20 +7,11 @@
          url('../fonts/Axilia.otf') format('opentype')
 }
 
-@font-face {
-    font-family: 'JosefinThin';
-    src: local('JosefinThin'),
-         url('../fonts/JosefinSans/JosefinSans-Thin.ttf') format('truetype')
-}
+
 @font-face {
     font-family: 'JosefinExtraLight';
     src: local('JosefinExtraLight'),
          url('../fonts/JosefinSans/JosefinSans-ExtraLight.ttf') format('truetype')
-}
-@font-face {
-    font-family: 'JosefinLight';
-    src: local('JosefinLight'),
-         url('../fonts/JosefinSans/JosefinSans-Light.ttf') format('truetype')
 }
 @font-face {
     font-family: 'JosefinMedium';
@@ -32,42 +23,14 @@
 
 /* #region Google/Product Sans */
 @font-face {
-    font-family: ProductSansLight;
-    src: local(ProductSansLight),
+    font-family: 'ProductSansLight';
+    src: local('ProductSansLight'),
          url('../fonts/ProductSans/ProductSans-Light.ttf') format('truetype')
 }
 @font-face {
-    font-family: ProductSansThin;
-    src: local(ProductSansThin),
-         url('../fonts/ProductSans/ProductSans-Thin.ttf') format('truetype')
-}
-@font-face {
-    font-family: GoogleSansRegular;
-    src: local(GoogleSansRegular),
+    font-family: 'GoogleSansRegular';
+    src: local('GoogleSansRegular'),
          url('../fonts/ProductSans/GoogleSans-Regular.ttf') format('truetype')
-}
-/* #endregion */
-
-/* #region Lato */
-@font-face {
-    font-family: 'LatoThin';
-    src: local('LatoThin'),
-         url('../fonts/Lato/Lato-Thin.ttf') format('truetype')
-}
-@font-face {
-    font-family: 'LatoLight';
-    src: local('LatoLight'),
-         url('../fonts/Lato/Lato-Light.ttf') format('truetype')
-}
-@font-face {
-    font-family: 'LatoRegular';
-    src: local('LatoRegular'),
-         url('../fonts/Lato/Lato-Regular.ttf') format('truetype')
-}
-@font-face {
-    font-family: 'LatoBold';
-    src: local('LatoBold'),
-         url('../fonts/Lato/Lato-Bold.ttf') format('truetype')
 }
 /* #endregion */
 
@@ -76,16 +39,6 @@
     font-family: 'LemonMilkLight';
     src: local('LemonMilkLight'),
          url('../fonts/LemonMilk/LEMONMILK-Light.otf') format('opentype')
-}
-@font-face {
-    font-family: 'LemonMilkRegular';
-    src: local('LemonMilkRegular'),
-         url('../fonts/LemonMilk/LEMONMILK-Regular.otf') format('opentype')
-}
-@font-face {
-    font-family: 'LemonMilkMedium';
-    src: local('LemonMilkMedium'),
-         url('../fonts/LemonMilk/LEMONMILK-Medium.otf') format('opentype')
 }
 /* #endregion */
 
@@ -419,7 +372,7 @@ ul.header-main-nav-links li{
 }
 ul.header-main-nav-links li a{
     position: relative;
-
+    letter-spacing:0.2rem;
     color:var(--lightgreen);
     padding: 0.5rem 0.6rem;
     font-size:calc(1rem + 0.6667vw);
@@ -494,7 +447,8 @@ h1.hero-content-title{
 }
 h1.hero-content-title div{
     font-size:calc(3.5rem + 3vw);
-    font-family: 'LemonMilkRegular',sans-serif;
+    font-family: 'LemonMilkLight',sans-serif;
+    font-weight: 900;
 }
 hr{
     border: 0.1rem solid #ffffff;
@@ -504,21 +458,20 @@ hr{
 p.hero-content-para{
     color: #fff;
     max-width:61rem;
-    font-family: 'LatoLight',sans-serif;
+    font-family: 'ProductSansLight',sans-serif;
     font-weight: 100;
     font-size:calc(1.5rem + 1vw);
-    /* margin-top: calc(0rem + 1vw); */
 }
 a.hero-content-cta:link,
 a.hero-content-cta:visited{
-    font-family: 'LatoLight',sans-serif;
+    font-family: JosefinMedium,sans-serif;
     color: var(--lightgreen);
     padding:2.5rem;
     z-index: 1;
     text-transform:uppercase;
     font-size: calc(0.5rem + 1vw);
     letter-spacing:0.2rem;
-    border: 0.1rem solid var(--lightgreen);
+    border: 3px solid var(--lightgreen);
     position: relative;
     margin: 0 auto;
     margin-top: calc(1rem + 1vw);
@@ -566,7 +519,7 @@ section#about{
     justify-content:center;
 }
 #introduction{
-    font-family: JosefinThin;
+    font-family: JosefinExtraLight,sans-serif;
     text-transform: uppercase;
     letter-spacing:0.5rem;
     font-size:calc(1.5rem + 1.5vw);
@@ -839,7 +792,7 @@ section#resume{
 #education-heading,
 #projects-heading,
 #hobbies-heading{
-    font-family: ProductSansThin;
+    font-family: ProductSansLight, sans-serif;
     font-size: calc(1rem + 2vh);
     color: var(--lightgreen);
     letter-spacing: 0.25rem;
@@ -1883,12 +1836,12 @@ section#hire-me{
 
 /* #endregion */
 
+
+/* #region Slide-animations */
 .slide-from-left
 .slide-from-right,
 .slide-from-top,
-.slide-from-bottom,
-.slide-from-left-top,
-.slide-from-right-bottom
+.slide-from-bottom
 {
     position: relative;
 }
@@ -1904,13 +1857,7 @@ section#hire-me{
 .slide-from-bottom[data-scroll="in"]{
     animation: slide-from-bottom 1s cubic-bezier(1,0,0,1);
 }
-.slide-from-left-top[data-scroll="in"]{
-    animation: slide-from-left-top 1s cubic-bezier(1,0,0,1);
-}
-.slide-from-right-bottom[data-scroll="in"]{
-    animation: slide-from-right-bottom 1s cubic-bezier(1,0,0,1);
-}
-
+/* #endregion */
 
 
 /* #region block-reveal */
@@ -1962,7 +1909,6 @@ section#hire-me{
     transform-origin:top;
     opacity: 0;
 }
-
 
 
 .block-reveal-left[data-scroll="in"],

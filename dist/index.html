@@ -17,7 +17,7 @@
   <script src="https://kit.fontawesome.com/3b2dcc196b.js" crossorigin="anonymous"></script>
 
   <!-- My stylesheets -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 
   <title>Aditya Sharma | Home</title>
 </head>
@@ -569,51 +569,14 @@
 </main>
 
 <script src="./js/scroll-out.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
-
+<script type="text/javascript" src="./js/index.min.js"></script>
 
 <script>
   ScrollOut({
     targets:
     '.block-reveal-left,.block-reveal-right,.block-reveal-top,.block-reveal-bottom,.slide-from-left,.slide-from-right,.slide-from-top,.slide-from-bottom,.slide-from-left-top,.slide-from-right-bottom,#skills'
-    // #skill-1,#skill-2,#skill-3,#skill-4,#skill-5,#skill-6,#skill-7,#skill-8'
   })
 </script>
-
-
-<!-- <script type="text/javascript">
-  window.addEventListener('scroll', reveal);
-
-  function reveal(){
-
-    var reveals = document.querySelectorAll('.reveal');
-    var slideFromLeft = document.querySelectorAll('.slide-from-left');
-    var slideFromRight = document.querySelectorAll('.slide-from-right');
-    var slideFromTop = document.querySelectorAll('.slide-from-top');
-    var slideFromBottom = document.querySelectorAll('.slide-from-bottom');
-
-    for(var i = 0; i < reveals.length; i++){
-
-      var windowheight = window.innerHeight;
-      var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 200;
-
-      if(revealtop < windowheight - revealpoint){
-        slideFromLeft[i].classList.add('slide-from-left-anim');
-        slideFromRight[i].classList.add('slide-from-right-anim');
-        slideFromTop[i].classList.add('slide-from-top-anim');
-        slideFromBottom[i].classList.add('slide-from-bottom-anim');
-      }
-      else{
-        slideFromLeft[i].classList.remove('slide-from-left-anim');
-        slideFromRight[i].classList.remove('slide-from-right-anim');
-        slideFromTop[i].classList.remove('slide-from-top-anim');
-        slideFromBottom[i].classList.remove('slide-from-bottom-anim');
-      }
-    }
-  }
-  </script> -->
-
 
 </body>
 </html>
