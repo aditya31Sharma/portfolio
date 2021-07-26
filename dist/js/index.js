@@ -15,14 +15,36 @@ hamburger.addEventListener('click',()=>{
     })
 })
 
-for (let i=0;i<=holder.length;i++){
+for (let j=0;j<=holder.length;j++){
 
-    holder[i].addEventListener('click',()=>{
-        leaf1[i].classList.toggle('leaf-1-clicked');
-        leaf2[i].classList.toggle('leaf-2-clicked');
-        holder[i].classList.toggle('holder-clicked');
-        heading[i].classList.toggle('heading-clicked');
-        content[i].classList.toggle('content-clicked');
+    holder[j].addEventListener('click',()=>{
+        leaf1[j].classList.toggle('leaf-1-clicked');
+        leaf2[j].classList.toggle('leaf-2-clicked');
+        holder[j].classList.toggle('holder-clicked');
+        heading[j].classList.toggle('heading-clicked');
+        content[j].classList.toggle('content-clicked');
     })
 
 }
+
+
+
+// window.addEventListener('scroll', reveal);
+
+// function reveal(){
+//   var reveals = document.querySelectorAll('.reveal');
+
+//   for(var i = 0; i < reveals.length; i++){
+
+//     var windowheight = window.innerHeight;
+//     var revealtop = reveals[i].getBoundingClientRect().top;
+//     var revealpoint = 150;
+
+//     if(revealtop < windowheight - revealpoint){
+//       reveals[i].classList.add('active');
+//     }
+//     else{
+//       reveals[i].classList.remove('active');
+//     }
+//   }
+// }

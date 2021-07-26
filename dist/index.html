@@ -21,7 +21,9 @@
   <div class="side-nav-content">
 
     <div class="side-nav-content-logo">
-      <img src="./img/aditya-logo-mint.png" alt="logo">
+      <a href="#header">
+        <img src="./img/aditya-logo-mint.png" alt="logo">
+      </a>
     </div>
 
     <ul class="side-nav-content-social">
@@ -55,7 +57,7 @@
 </aside>
 
 <!-- MAIN CONTENT -->
-<main>
+<main class="main">
 
   <!-- Main-nav -->
   <header id="header">
@@ -68,10 +70,10 @@
       </div>
 
       <ul class="header-main-nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">HIRE ME</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Works</a></li>
+        <li><a href="#skills">Skillset</a></li>
+        <li><a href="#resume">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -86,23 +88,23 @@
       <p class="hero-content-para">
         Front-end Developer / Graphic Designer
       </p>
-      <a href="#" class="hero-content-cta">My work</a>
+      <a href="#hire-me" class="hero-content-cta">HIRE ME</a>
     </div>
   </section>
 
   <!-- About section -->
   <section id="about">
-    <div id="about-container">
+    <div id="about-container" >
 
       <h2 id="introduction">
         Let me introduce myself
       </h2>
       <div id="about-container-1">
-        <div id="img-side">
+        <div id="img-side" class="block-reveal-left slide-from-left">
           <img src="./img/aboutme.jpg" alt="">
         </div>
-        <div id="content-side">
-          <p>
+        <div id="content-side" class="block-reveal-right slide-from-right">
+          <p >
             I'm a generic lad pursuing Bachelor of Technology in the field of Computer Science and Engineering from Amity School of Engineering and Technology, Amity University Noida. I was born in New Delhi but raised in Ghaziabad, Uttar Pradesh. My interests are Web development and Graphic Design, and I love to do natural photography and listen to some of my favourite songs when Im free. I have a great sense of humour and always try to make people laugh, make friends and socialise. I always believe that there's no religion above humanity and sincerity and that none shall make excuses for voilating them.
           </p>
         </div>
@@ -110,7 +112,7 @@
 
       <div id="about-container-2">
 
-        <div class="container-card">
+        <div class="container-card block-reveal-bottom">
           <h3 class="container-card-title">
             Full Name
           </h3>
@@ -119,7 +121,7 @@
           </p>
         </div>
 
-        <div class="container-card">
+        <div class="container-card block-reveal-top">
           <h3 class="container-card-title">
             Birth Date
           </h3>
@@ -128,7 +130,7 @@
           </p>
         </div>
         
-        <div class="container-card">
+        <div class="container-card block-reveal-bottom">
           <h3 class="container-card-title">
             Job
           </h3>
@@ -137,7 +139,7 @@
           </p>
         </div>
 
-        <div class="container-card">
+        <div class="container-card block-reveal-top">
           <h3 class="container-card-title">
             Education
           </h3>
@@ -159,8 +161,8 @@
 
     <div id="work-container">
 
-      <div class="work-container-card">
-        <div class="work-container-card-img">
+      <div class="work-container-card slide-from-left-top">
+        <div class="work-container-card-img ">
           <img src="./img/sample.png" alt="">
         </div>
         <div class="work-container-card-heading">
@@ -170,7 +172,7 @@
         </div>
       </div>
 
-      <div class="work-container-card">
+      <div class="work-container-card slide-from-right-bottom">
         <div class="work-container-card-img">
           <img src="./img/sample.png" alt="">
         </div>
@@ -189,30 +191,30 @@
   <section id="skills">
     
     <div class="skills-coding skill-container">
-      <h3 class="skills-title">Coding Skills</h3>
+      <h3 class="skills-title slide-from-right">Coding Skills</h3>
 
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>HTML / CSS</h4>
         <div class="skill-progress-container">
           <span id="skill-1" class="skill-progress"></span>
         </div>
       </div>
       
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>Javascript</h4>
         <div class="skill-progress-container">
           <span id="skill-2" class="skill-progress"></span>
         </div>
       </div>
 
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>React JS</h4>
         <div class="skill-progress-container">
           <span id="skill-3" class="skill-progress"></span>
         </div>
       </div>
 
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>C++</h4>
         <div class="skill-progress-container">
           <span id="skill-4" class="skill-progress"></span>
@@ -222,30 +224,30 @@
 
 
     <div class="skills-design skill-container">
-      <h3 class="skills-title">Design Skills</h3>
+      <h3 class="skills-title slide-from-right">Design Skills</h3>
       
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>Web Design</h4>
         <div class="skill-progress-container">
           <span id="skill-5" class="skill-progress"></span>
         </div>
       </div>
       
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>Vector Art</h4>
         <div class="skill-progress-container">
           <span id="skill-6" class="skill-progress"></span>
         </div>
       </div>
 
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>Logo Design</h4>
         <div class="skill-progress-container">
           <span id="skill-7" class="skill-progress"></span>
         </div>
       </div>
 
-      <div class="a-skill">
+      <div class="a-skill slide-from-left">
         <h4>Graphic Design</h4>
         <div class="skill-progress-container">
           <span id="skill-8" class="skill-progress"></span>
@@ -266,7 +268,7 @@
 
 
     <!-- Education -->
-    <div id="education" class="a-field">
+    <div id="education" class="a-field slide-from-bottom">
 
       <h3 id="education-heading">Education</h3>
 
@@ -288,7 +290,7 @@
           <h4><a href="https://www.amity.edu/" target="_blank">Amity University Noida</a> 
           </h4>
           <p>Year of Passing: <span>2023</span></p>
-          <p>SGPA in the Last Semester: <span><u><a href="#">8.00</a></u></span></p>
+          <p>SGPA in the Last Semester: <span><u><a href="./docs/Aditya Sharma Resume 2021.pdf" target="_blank">8.00</a></u></span></p>
         </div>
       </div>
 
@@ -312,7 +314,7 @@
           <h4><a href="https://ind.stthomasghaziabad.org/" target="_blank">St. thomas School indirapuram</a> 
           </h4>
           <p>Board: <span>CBSE</span></p>
-          <p>Percentage: <span><u><a href="#">76.26%</a></u></span></p>
+          <p>Percentage: <span><u><a href="./docs/Class XII result.pdf" target="_blank">76.26%</a></u></span></p>
         </div>
 
       </div>
@@ -337,7 +339,7 @@
           <h4><a href="https://ind.stthomasghaziabad.org/" target="_blank">St. thomas School indirapuram</a> 
           </h4>
           <p>Board: <span>CBSE</span></p>
-          <p>CGPA: <span><u><a href="#">9.20</a></u></span></p>
+          <p>CGPA: <span><u><a href="./docs/Class X–2017.pdf" target="_blank">9.20</a></u></span></p>
         </div>
 
         
@@ -347,7 +349,7 @@
 
 
     <!-- Projects -->
-    <div id="projects" class="a-field">
+    <div id="projects" class="a-field slide-from-bottom">
 
       <h3 id="projects-heading">Projects / Experience</h3>
 
@@ -423,7 +425,7 @@
     </div>
    
     <!-- Hobbies / Extra-Curricular -->
-    <div id="hobbies" class="a-field">
+    <div id="hobbies" class="a-field slide-from-bottom">
 
       <h3 id="hobbies-heading">Hobbies / Extra-Curricular</h3>
 
@@ -472,7 +474,7 @@
 
         <div class="a-field-content-heading">
             <h4><p>Member</p></h4>
-            <h4 class="project-info">Graphic Design Team - Amity Mozilla CLub
+            <h4 class="project-info">Graphic Design Team - Amity Mozilla Club
             </h4>
           </a>
           
@@ -515,33 +517,95 @@
 
 
     <!-- Download -->
-    <div class="download-resume">
-      <a href="#">Download Resume
+    <div class="download-resume slide-from-bottom">
+      <a href="./docs/Aditya Sharma Resume 2021.pdf" download>Download Resume
       </a>
     </div>
+
   </section>
 
+  <!-- Hire me -->
   <section id="hire-me">
-    <h4 id="hire-me-heading">< Hire me ></h4>
+
+    <h4 id="hire-me-heading" class="slide-from-top">< Hire me ></h4>
+
     <div class="btns-container-div">
-      <a href="tel:+919810405410"><i class="fas fa-mobile-alt"></i>&nbsp; &nbsp;Call</a>
-      <a href="mailto: aditya311001sharma@gmail.com" target="_blank"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
+
+      <a href="tel:+919810405410" class="slide-from-left block-reveal-right">
+        <i class="fas fa-mobile-alt"></i>
+        &nbsp; &nbsp;Call
+      </a>
+      <a href="mailto: aditya311001sharma@gmail.com" target="_blank" class="slide-from-right block-reveal-left">
+        <i class="fas fa-envelope"></i>
+        &nbsp;&nbsp;Email
+      </a>
+
     </div>
+
     <p>
       <span>
         <i class="far fa-hand-point-left"></i>
       </span>  
       &nbsp; &nbsp; All other social links can be found in the side navigation to your left
     </p>
+
   </section>
 
-  <footer id="footer">
+  <!-- Footer -->
+  <footer id="footer" class="">
     <div class="footer-container">
-      <h5>Made with &#10084; by Aditya</h5>
+      <h5>Made by &#10084; & Aditya</h5>
       <p>July 2021</p>
     </div>
   </footer>
+
 </main>
+
+<script src="./js/scroll-out.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
+
+
+<script>
+  ScrollOut({
+    targets:
+    '.block-reveal-left,.block-reveal-right,.block-reveal-top,.block-reveal-bottom,.slide-from-left,.slide-from-right,.slide-from-top,.slide-from-bottom,.slide-from-left-top,.slide-from-right-bottom'
+  })
+</script>
+
+
+<!-- <script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+
+    var reveals = document.querySelectorAll('.reveal');
+    var slideFromLeft = document.querySelectorAll('.slide-from-left');
+    var slideFromRight = document.querySelectorAll('.slide-from-right');
+    var slideFromTop = document.querySelectorAll('.slide-from-top');
+    var slideFromBottom = document.querySelectorAll('.slide-from-bottom');
+
+    for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 200;
+
+      if(revealtop < windowheight - revealpoint){
+        slideFromLeft[i].classList.add('slide-from-left-anim');
+        slideFromRight[i].classList.add('slide-from-right-anim');
+        slideFromTop[i].classList.add('slide-from-top-anim');
+        slideFromBottom[i].classList.add('slide-from-bottom-anim');
+      }
+      else{
+        slideFromLeft[i].classList.remove('slide-from-left-anim');
+        slideFromRight[i].classList.remove('slide-from-right-anim');
+        slideFromTop[i].classList.remove('slide-from-top-anim');
+        slideFromBottom[i].classList.remove('slide-from-bottom-anim');
+      }
+    }
+  }
+  </script> -->
+
+
 </body>
 </html>
