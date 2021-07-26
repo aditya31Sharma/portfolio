@@ -378,6 +378,7 @@ body{
     font-weight:100;
     line-height: 1rem;
     display: flex;
+    background-color: var(--dark-gray);
 }
 a:link, a:visited{
     text-decoration:none;
