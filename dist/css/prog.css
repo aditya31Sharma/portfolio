@@ -39,7 +39,7 @@ html {
     font-size:62.5%;
     --dark-gray: #0f0f0f;
     --ligher-gray: #1f1f1f;
-    --lightgreen:#3BFEB8;
+    --lightblue:#00fff0;
 }
 
 body{
@@ -82,7 +82,7 @@ main{
     top: 2rem;
     right: 0rem;
     cursor: pointer;
-    background-color:var(--lightgreen);
+    background-color:var(--lightblue);
     padding: 2rem 2rem;
     border-radius: 40% 0px 0px 40% ;
     font-size: 3rem;
@@ -97,6 +97,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top:5rem;
+    
 }
 .a-project{
     display:flex;
@@ -109,8 +110,9 @@ main{
     border-radius: 50px;
     padding: 3rem;
     background: linear-gradient(145deg, #0f0f0f, #121212);
-    box-shadow:  32px 32px 64px rgb(0, 0, 0),
+    box-shadow: 32px 32px 64px rgb(0, 0, 0),
              -32px -32px 64px rgb(255, 255, 255,0.05);
+
 }
 
 .img-container{
@@ -126,7 +128,7 @@ main{
 }
 .content-container h3{
     font-family: GoogleSansRegular;
-    color: var(--lightgreen);
+    color: var(--lightblue);
     font-size: 3.5rem;
     text-align: left;
     align-self: flex-start;
@@ -143,7 +145,7 @@ main{
     text-align:left;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--lightgreen);
+    border-bottom: 1px solid var(--lightblue);
 }
 .content-container p{
     font-family: ProductSansLight;
