@@ -87,7 +87,7 @@ body{
 .slider{
   position: relative;
   width: 800px;
-  min-height: 600px;
+  height: 800px;
   margin: 20px;
   overflow: hidden;
   margin: 0 auto;
@@ -155,7 +155,6 @@ body{
 .navigation-visibility{
   z-index: 999;
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
 }
@@ -186,7 +185,7 @@ body{
 @media only screen and (max-width:1000px){
     .slider{
         width:600px;
-        height: 400px;
+        height: 600px;
     }
     .navigation{
         height:600px;
@@ -204,7 +203,7 @@ body{
         height: 500px;
     }
     .navigation{
-        height:600px;
+        height:500px;
     }
     .navigation-visibility .slide-icon{
         width: 10px;
@@ -224,10 +223,12 @@ body{
 @media only screen and (max-width:520px){
     .slider{
         width:400px;
-        height: 300px;
+        height: 500px;
     }
     .navigation{
-        height:600px;
+        height:500px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .navigation-visibility .slide-icon{
         width: 10px;
@@ -237,16 +238,20 @@ body{
 }
 @media only screen and (max-width:450px){
     .slider{
-        width:325px;
+        width:300px;
+        height:550px;
+        box-shadow: 20px 20px 30px #060606,
+             -20px -20px 30px #181818;
+    
+    }
+    .navigation{
+      height:525px;
     }
     .navigation-visibility{
+        padding: 0 2rem;
         display: flex;
         flex-wrap: wrap;
-        align-items:stretch;
-        justify-content: center;
-        margin: -2rem 2rem;
     }
-
     .navigation-visibility .slide-icon{
         width: 10px;
         height: 10px;
@@ -258,15 +263,12 @@ body{
     }
     .prev-btn, .next-btn{
         z-index: 999;
-        font-size: 2em;
+        font-size: 1.5rem;
         color: #000;
-        background: #7affce77;
-        width:100px;
-        height:400px;
-        /* padding: 20rem 7rem; */
-        /* margin: 0 3rem; */
-        border-radius:0%;
+        /* transform: translateY(200px); */
+        border-radius:10px;
         cursor: pointer;
+        margin-bottom: 3rem;
     }
 }
 
