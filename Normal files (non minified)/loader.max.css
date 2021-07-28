@@ -1,0 +1,75 @@
+
+/* #region Loader */
+
+
+
+.loader-bg,
+.loader-bg-graphdes,
+.loader-bg-prog
+{
+    position:fixed;
+    overflow: hidden;
+    z-index: 10000;
+    background-color: var(--dark-gray);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove-left{
+    animation: remove-left 1s ease-in-out forwards;
+}
+.remove-right{
+    animation: remove-right 1s ease-in-out forwards;
+}
+
+.loader-circle{
+    position:absolute;
+    margin: 0 auto;
+    padding:2rem;
+    width: 300px;
+    height: 300px;
+    border:2px solid transparent;
+    border-top-color: var(--lightblue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader-circle 1s infinite 
+    cubic-bezier(1,0.5,0.75,0.75);
+}
+.loader-bg img,
+.loader-bg-graphdes img,
+.loader-bg-prog img{
+    z-index: 33;
+    width:150px;
+    /* padding-right: 0.5rem; */
+}
+
+@keyframes loader-circle{
+    0%{
+        transform:rotateZ(0deg);
+    }
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
+@keyframes remove-left{
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+@keyframes remove-right{
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+
+/* #endregion */
