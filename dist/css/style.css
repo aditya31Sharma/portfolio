@@ -1945,3 +1945,63 @@ section#hire-me{
 /* #endregion */
 
 
+
+@media only screen and (max-height:780px){
+    section#about{
+        height:160vh;
+    }
+    section#skills{
+        height:200vh;
+    }
+    section#resume{
+        height:320vh;
+    }
+    section#hire-me{
+        height:60vh;
+    }
+}
+@media only screen and (max-height:700px){
+    section#about{
+        height:180vh;
+    }
+    section#skills{
+        height:200vh;
+    }
+    section#resume{
+        height:350vh;
+    }
+    section#hire-me{
+        height:60vh;
+    }
+    .skills-design {
+        margin-top: -20rem;
+    }
+    .skills-coding {
+        margin-top: -10rem;
+    }
+}
+@media only screen and (max-height:640px){
+    section#about{
+        height:200vh;
+    }
+    section#work{
+        height:125vh;
+    }
+    #hobbies {
+        margin-bottom: 4rem;
+    }
+}
+@media only screen and (max-height:610px){
+    section#about{
+        height:200vh;
+    }
+    section#work{
+        height:125vh;
+    }
+    #hobbies {
+        margin-bottom: 4rem;
+    }
+    section#resume{
+        height:375vh;
+    }
+}

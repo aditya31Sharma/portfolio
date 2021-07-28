@@ -16,8 +16,8 @@ hamburger.addEventListener('click',()=>{
         link.classList.toggle('fade');
     })
 })
-let j=0;
-for (j=0;j<=holder.length;j++){
+
+for (let j=0;j<=holder.length;j++){
 
     holder[j].addEventListener('click',()=>{
         leaf1[j].classList.toggle('leaf-1-clicked');
