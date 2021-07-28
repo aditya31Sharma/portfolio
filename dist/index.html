@@ -29,12 +29,23 @@
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/3b2dcc196b.js" crossorigin="anonymous"></script>
 
+
   <!-- My stylesheets -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/loader.css">
 
   <title>Aditya Sharma | Home</title>
 </head>
+
+
 <body>
+
+<!-- Loader -->
+<div class="loader-bg">
+  <img src="./img//AdityaSharma-logo-blue.png" alt="">
+  <div class="loader-circle">
+  </div>
+</div>  
 
 <!-- ASIDE NAVBAR -->
 <aside id="side-nav">
@@ -78,7 +89,6 @@
 
 <!-- MAIN CONTENT -->
 <main class="main">
-
   <!-- Main-nav -->
   <header id="header">
     <nav id="header-main-nav">
@@ -194,7 +204,7 @@
       </div>
       </a>
 
-      <a href="./html/graphdes.html">
+      <a href="./html/graphdes.html" id="graphdeslink">
       <div class="work-container-card slide-from-right">
         <div class="work-container-card-img ">
           <img src="./img/graphdes.png" alt="graph des">
@@ -314,7 +324,7 @@
           <h4><a href="https://www.amity.edu/" target="_blank">Amity University Noida</a> 
           </h4>
           <p>Year of Passing: <span>2023</span></p>
-          <p>SGPA in the Last Semester: <span><u><a href="./docs/Aditya Sharma Resume 2021.pdf" target="_blank">8.00</a></u></span></p>
+          <p>SGPA in the Last Semester: <span><u><a href="./docs/Amity-4thsem-result.pdf" target="_blank">8.00</a></u></span></p>
         </div>
       </div>
 
@@ -585,15 +595,29 @@
 
 </main>
 
-<script src="./js/scroll-out.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
 
+
+<script type="text/javascript" src="./js/index.js">
+</script>
+
+
+<script>
+  setTimeout(function(){
+    $('.loader-bg').fadeToggle();
+},2000);
+
+</script>
+
+<script src="./js/scroll-out.js"></script>
 <script>
   ScrollOut({
     targets:
     '.block-reveal-left,.block-reveal-right,.block-reveal-top,.block-reveal-bottom,.slide-from-left,.slide-from-right,.slide-from-top,.slide-from-bottom,.slide-from-left-top,.slide-from-right-bottom,#skills'
   })
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </body>
 </html>

@@ -8,14 +8,16 @@ const leaf2=document.getElementsByClassName('leaf-2')
 const heading=document.getElementsByClassName('a-field-content-heading');
 const content=document.getElementsByClassName('a-field-content-info');
 
+const graphdeslink=document.getElementById('graphdeslink');
+const coverleft=document.getElementById('cover-left');
 hamburger.addEventListener('click',()=>{
     hamburgerContainer.classList.toggle('clicked');
     links.forEach((link)=>{
         link.classList.toggle('fade');
     })
 })
-
-for (let j=0;j<=holder.length;j++){
+let j=0;
+for (j=0;j<=holder.length;j++){
 
     holder[j].addEventListener('click',()=>{
         leaf1[j].classList.toggle('leaf-1-clicked');

@@ -285,7 +285,6 @@ body{
     display: flex;
     background-color: var(--darkest-gray);
     overflow-x: hidden;
-    /* overflow-y: hidden; */
 }
 a:link, a:visited{
     text-decoration:none;
@@ -310,7 +309,6 @@ aside#side-nav{
     left: 0;
     height:100vh;
     z-index: 10;
-    /* scroll-behavior: none; */
 }
 div.side-nav-content{
     height:100%;
@@ -425,6 +423,7 @@ section#hero{
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .hero-content{
     padding: calc(1rem + 2vw);
@@ -507,7 +506,8 @@ a.hero-content-cta:active::after{
 section#about{
     height:100vh;
     background-color:#ccc;
-    overflow-x: hidden;
+    overflow-x: hidden;overflow-y: hidden;
+
 }
 #about-container{
     max-width:75vw;
@@ -579,6 +579,7 @@ section#work{
     font-size:calc(2rem + 2vw);
     color:#fff;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 #work-title{
     font-family: 'JosefinExtraLight';
@@ -643,6 +644,7 @@ section#work{
 section#skills{
     height:100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -744,6 +746,7 @@ h3.skills-title{
 section#resume{
     height:350vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: var(--dark-gray);
     color: #fff;
     font-size: 2rem;
@@ -975,6 +978,7 @@ h4.project-info{
 
 section#hire-me{
     overflow-x: hidden;
+    overflow-y: hidden;
     height:40vh;
     background-color: #ccc;
     color: #000;
@@ -1040,6 +1044,7 @@ section#hire-me{
 
     footer#footer{
         overflow-x: hidden;
+        overflow-y: hidden;
         height: 10vh;
         background-color: var(--darkest-gray);
         color: var(--lightblue);
@@ -1057,7 +1062,6 @@ section#hire-me{
     }
 
 /* #endregion */
-
 
 
 
