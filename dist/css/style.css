@@ -343,6 +343,7 @@ ul.side-nav-content-social a i:active{
       0 0 70px var(--lightblue);
 }
 
+
 /* #endregion */
 
 
@@ -1996,7 +1997,7 @@ section#hire-me{
 }
 @media only screen and (max-height:610px){
     section#about{
-        height:200vh;
+        height:175vh;
     }
     #hobbies {
         margin-bottom: 4rem;
