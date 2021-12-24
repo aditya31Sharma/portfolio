@@ -662,6 +662,7 @@ h3.skills-title{
     letter-spacing:1rem;
     font-size:calc(1.5rem + 1vw);
     margin-bottom: 5rem;
+    color: var(--primary-color);
 }
 .a-skill{
     padding: 1rem 0rem;
