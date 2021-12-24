@@ -1,0 +1,5 @@
+dark blue: 2a2a72
+lighter blue: 009ffd
+
+light blue: 01aef0
+lighest blue: a9e7ff
