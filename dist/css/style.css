@@ -317,6 +317,7 @@ div.side-nav-content{
     flex-direction:column;
     justify-content: space-between;
     background-color: var(--darkest-gray);
+    /* background-color:white; */
 }
 div.side-nav-content-logo img{
     width: calc(2.5vw + 2.5vh);
@@ -331,8 +332,8 @@ ul.side-nav-content-social{
     justify-content:flex-end;
 }
 ul.side-nav-content-social a i{
-    font-size:calc(1rem + 0.6667vw);
-    padding-bottom:calc(2rem + 0.6667vw);
+    font-size:calc(2rem + 0.6667vw);
+    padding-bottom:calc(3rem + 0.6667vw);
     color:var(--primary-color);
 }
 ul.side-nav-content-social a i:hover,
